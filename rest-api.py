@@ -1,11 +1,11 @@
 from flask import Flask, jsonify
-#import unlocker
+import unlocker
 
 app = Flask(__name__)
 
 @app.route('/api/open-door', methods=['GET'])
 def get_tasks():
-    #unlock()
+    unlock()
     return "hello world"
 
 if __name__ == '__main__':
