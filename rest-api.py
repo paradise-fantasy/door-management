@@ -1,5 +1,5 @@
-from flask import Flask, jsonify
-import unlocker
+from flask import Flask
+from unlocker import unlock
 
 app = Flask(__name__)
 
