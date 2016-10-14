@@ -9,4 +9,5 @@ def get_tasks():
     return "hello world"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    context = ('certkey/cert.pem', 'certkey/privkey.pem')
+    app.run(host='0.0.0.0', port=80, ssl_context=context, debug=True)
